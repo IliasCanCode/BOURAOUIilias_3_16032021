@@ -12,10 +12,6 @@
     font-family: 'Roboto-regular';
     list-style-type: none;
   }
-  
-h1,h2{
-    font-family: Shrikhand;
-  }
 
 body, ul, li, h1, h2, p, figure{
     margin:0;
@@ -25,12 +21,160 @@ body, ul, li, h1, h2, p, figure{
 body{
     width: 900px;
   }
-  
+
+#imglogo {
+    height: 50px;
+}
+
 #logo{
+    @include centre();
     height: 70px;
   }
   
+header i{
+    margin-right: 15px; 
+}
+
 #place{
+    @include centre();
     height: 60px;
     box-shadow: inset 0px 6px 3px -3px #00000048;
+    background: #e0e0e0f2;
   }
+
+  #recherche{
+    @include centre();  
+    flex-direction: column;
+    padding: 40px;;
+    background: #f2f2f2;
+  }
+
+  #recherche h1 {
+    padding: 15px;
+}
+  
+  #txthaut {
+    margin-bottom: 20px;
+}
+
+.btn__outline--color {
+    color: white;
+    border: none;
+    height: 45px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: linear-gradient($colour-primary,$colour-secondary);
+}
+
+ul.tuto__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numeros{
+    position: absolute;
+    left: 35px;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    color: white;
+    @include centre;
+    background: $colour-primary;
+}
+
+.modele{
+    @include listeombre;
+    @include centre;
+    height: 60px;
+    border-radius: 20px;
+    width: 90%;
+    background: #f2f2f2;
+    
+        &--highlight{
+            @include listeombre;
+            @include centre;
+            background: #9256dc33;
+            height: 60px;
+            border-radius: 20px;
+            width: 90%;
+        }
+}
+
+i.fas.fa-store {
+    color: $colour-primary;
+}
+
+.tuto i {
+    margin-right: 20px;
+}
+
+.tuto h1{
+    padding: 30px;
+}
+
+.modele, .modele--highlight{
+    margin-bottom: 20px;
+}
+
+.resto {
+    background: #f2f2f2;
+}
+
+.resto h1 {
+    padding: 20px;
+}
+
+.resto ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resto ul li {
+    margin-bottom: 20px;
+    width: 90%;
+    background: white;
+    border-radius: 20px;
+    margin-right: 23px;
+    box-shadow: 1px 3px 10px 0px rgb(0 0 0 / 12%);
+}
+
+figure.resto__figure {
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.resto figure img {
+    width: 100%;
+}
+
+.resto__txt, .resto h2 {
+    margin: 10px 0px 10px 15px;
+}
+
+i.far.fa-heart {
+    position: absolute;
+    left: 800px;
+    font-size: 1.3em;
+}
+
+.titrebas{
+    font-family: Shrikhand;
+    margin-bottom: 15px;
+}
+
+footer{
+    color: white;
+    padding: 20px;
+    background: rgb(0 0 0 / 84%);
+}
+
+.logofoot{
+    height: 25px;
+}
+
+footer i {
+    margin-right: 10px;
+}
