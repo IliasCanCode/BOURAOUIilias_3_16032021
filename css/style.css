@@ -16,8 +16,149 @@ body, ul, li, h1, h2, p, figure {
   padding: 0;
 }
 
-body {
-  width: 900px;
+header {
+  background: white;
+}
+
+#menu {
+  background: #f2f2f2;
+}
+
+#menu h1 {
+  font-family: shrikhand;
+}
+
+.men h2 {
+  margin: 10px 0px 10px 0px;
+  font-size: 1.3em;
+  font-weight: normal;
+  text-decoration: underline #99E2D0;
+}
+
+#menu #logo img {
+  width: 100%;
+}
+
+.figimg {
+  height: 260px;
+}
+
+.photoresto {
+  width: 100%;
+}
+
+.fleche a {
+  color: black;
+  text-decoration: none;
+}
+
+figure#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section.men {
+  position: relative;
+  bottom: 35px;
+  padding: 30px 15px 25px 15px;
+  background: #f2f2f2;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.headsec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fleche {
+  right: 80px;
+  position: relative;
+}
+
+.men li {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding: 7px;
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.12);
+  font-weight: bold;
+}
+
+.descr {
+  font-weight: normal;
+}
+
+.prix {
+  font-size: 0.85em;
+  position: absolute;
+  right: 30px;
+}
+
+.desserts {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton {
+  color: white;
+  height: 40px;
+  width: 130px;
+  border-radius: 30px;
+  border: 1px solid #FF79DA;
+  background: linear-gradient(#9356dc, #ff79da);
+}
+
+.titrebas {
+  font-family: Shrikhand;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+footer {
+  color: white;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.84);
+}
+
+.listebas a {
+  text-decoration: none;
+  color: white;
+}
+
+.logofoot {
+  height: 25px;
+}
+
+footer i {
+  margin-right: 10px;
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+* {
+  font-family: "Roboto-regular";
+  list-style-type: none;
+}
+
+body, ul, li, h1, h2, p, figure {
+  margin: 0;
+  padding: 0;
 }
 
 #imglogo {
@@ -78,7 +219,7 @@ ul.tuto__list {
 
 .numeros {
   position: absolute;
-  left: 35px;
+  left: -10px;
   height: 20px;
   width: 20px;
   border-radius: 20px;
@@ -87,6 +228,11 @@ ul.tuto__list {
   align-items: center;
   justify-content: center;
   background: #9356DC;
+}
+
+.modele, .modele--highlight {
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .modele {
@@ -110,7 +256,11 @@ ul.tuto__list {
   width: 90%;
 }
 
-i.fas.fa-store {
+.modele:hover {
+  background: #9256dc33;
+}
+
+.tuto i:hover {
   color: #9356DC;
 }
 
@@ -122,8 +272,9 @@ i.fas.fa-store {
   padding: 30px;
 }
 
-.modele, .modele--highlight {
-  margin-bottom: 20px;
+.menu {
+  text-decoration: none;
+  color: black;
 }
 
 .resto {
@@ -145,7 +296,6 @@ i.fas.fa-store {
   width: 90%;
   background: white;
   border-radius: 20px;
-  margin-right: 23px;
   box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -159,13 +309,17 @@ figure.resto__figure {
   width: 100%;
 }
 
+.resto__txt {
+  position: relative;
+}
+
 .resto__txt, .resto h2 {
   margin: 10px 0px 10px 15px;
 }
 
 i.far.fa-heart {
   position: absolute;
-  left: 800px;
+  right: 45px;
   font-size: 1.3em;
 }
 

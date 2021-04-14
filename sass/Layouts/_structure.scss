@@ -18,10 +18,6 @@ body, ul, li, h1, h2, p, figure{
     padding: 0;
   }
 
-body{
-    width: 900px;
-  }
-
 #imglogo {
     height: 50px;
 }
@@ -74,13 +70,18 @@ ul.tuto__list {
 
 .numeros{
     position: absolute;
-    left: 35px;
+    left: -10px;
     height: 20px;
     width: 20px;
     border-radius: 20px;
     color: white;
     @include centre;
     background: $colour-primary;
+}
+
+.modele, .modele--highlight{
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .modele{
@@ -101,9 +102,13 @@ ul.tuto__list {
         }
 }
 
-i.fas.fa-store {
-    color: $colour-primary;
+.modele:hover{
+    background: #9256dc33;
 }
+
+ .tuto i:hover{
+    color: $colour-primary;
+ }
 
 .tuto i {
     margin-right: 20px;
@@ -113,8 +118,9 @@ i.fas.fa-store {
     padding: 30px;
 }
 
-.modele, .modele--highlight{
-    margin-bottom: 20px;
+.menu {
+    text-decoration: none;
+    color: black;
 }
 
 .resto {
@@ -136,7 +142,6 @@ i.fas.fa-store {
     width: 90%;
     background: white;
     border-radius: 20px;
-    margin-right: 23px;
     box-shadow: 1px 3px 10px 0px rgb(0 0 0 / 12%);
 }
 
@@ -150,13 +155,17 @@ figure.resto__figure {
     width: 100%;
 }
 
+.resto__txt{
+    position: relative;
+}
+
 .resto__txt, .resto h2 {
     margin: 10px 0px 10px 15px;
 }
 
 i.far.fa-heart {
     position: absolute;
-    left: 800px;
+    right: 45px;
     font-size: 1.3em;
 }
 
