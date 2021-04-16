@@ -28,11 +28,26 @@ header {
   font-family: shrikhand;
 }
 
+.headsec {
+  margin-bottom: 25px;
+}
+
+.entrees, .plats, .desserts {
+  margin-bottom: 30px;
+}
+
+hr {
+  margin: 0px 0px 10px 0px;
+  background: #99E2D0;
+  height: 2px;
+  border: none;
+  width: 41px;
+}
+
 .men h2 {
-  margin: 10px 0px 10px 0px;
   font-size: 1.3em;
   font-weight: normal;
-  text-decoration: underline #99E2D0;
+  padding-top: 10px;
 }
 
 #menu #logo img {
@@ -50,13 +65,6 @@ header {
 .fleche a {
   color: black;
   text-decoration: none;
-}
-
-figure#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 section.men {
@@ -83,13 +91,22 @@ section.men {
   flex-direction: column;
   justify-content: center;
   background: white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-radius: 15px;
   padding: 7px;
   box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.12);
   font-weight: bold;
+  animation: apparition 1s ease 0s 1 normal forwards;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .descr {
   font-weight: normal;
 }
@@ -122,12 +139,6 @@ form {
   font-family: Shrikhand;
   margin-bottom: 15px;
   text-decoration: none;
-}
-
-footer {
-  color: white;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.84);
 }
 
 .listebas a {
@@ -321,11 +332,11 @@ i.far.fa-heart {
   position: absolute;
   right: 45px;
   font-size: 1.3em;
+  color: black;
+  transition: all 400ms ease-in-out;
 }
-
-.titrebas {
-  font-family: Shrikhand;
-  margin-bottom: 15px;
+i.far.fa-heart:hover {
+  color: #9356DC;
 }
 
 footer {
@@ -340,6 +351,78 @@ footer {
 
 footer i {
   margin-right: 10px;
+}
+
+@media (min-width: 576px) {
+  .tuto h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #recherche {
+    padding: 20px;
+  }
+
+  #recherche h1 {
+    padding: 5px;
+  }
+
+  .resto h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .resto__txt, .resto h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .resto ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .resto ul li {
+    margin: 20px 0px 15px 15px;
+    width: 47%;
+  }
+
+  .titrebas {
+    margin-right: 15px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    width: 70%;
+    margin: auto;
+  }
+
+  .modele {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    width: 50%;
+    margin: auto;
+  }
+
+  #menu {
+    background-color: white;
+  }
+
+  .modele {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

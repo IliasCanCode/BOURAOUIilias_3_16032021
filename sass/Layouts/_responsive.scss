@@ -1,0 +1,76 @@
+@media (min-width: 576px) {
+
+    .tuto h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #recherche {
+        padding: 20px;
+    }
+
+    #recherche h1{
+        padding: 5px;
+    }
+
+    .resto h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .resto__txt, .resto h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .resto ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .resto ul li {
+        margin: 20px 0px 15px 15px;
+        width: 47%;
+    }
+
+    .titrebas{
+        margin-right: 15px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 992px) {
+    body{
+        width: 70%;
+        margin: auto;
+    }
+
+    .modele{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body{
+        width: 50%;
+        margin: auto;
+    }
+
+    #menu{
+        background-color: white;
+    }
+
+    .modele{
+        width: 70%;
+    }
+}
