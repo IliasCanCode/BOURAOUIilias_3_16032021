@@ -213,13 +213,34 @@ header i {
   margin-bottom: 20px;
 }
 
-.btn__outline--color {
+.btn {
+  display: flex;
+  align-items: center;
   color: white;
   border: none;
   height: 45px;
   padding: 5px 15px;
   border-radius: 30px;
   background: linear-gradient(#9356DC, #FF79DA);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 15px -3px #000000;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  box-shadow: 0px 6px 17px -3px #000000;
+  background-color: #782cd3 #ff46cc;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 
 ul.tuto__list {
@@ -402,7 +423,6 @@ footer i {
 }
 @media (min-width: 992px) {
   body {
-    width: 70%;
     margin: auto;
   }
 
@@ -411,11 +431,6 @@ footer i {
   }
 }
 @media (min-width: 1200px) {
-  body {
-    width: 50%;
-    margin: auto;
-  }
-
   #menu {
     background-color: white;
   }
